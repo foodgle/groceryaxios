@@ -29,7 +29,7 @@ export default{
     methods:{
     
     fetchData : function(){
-        axios.get('http://covid19.soficoop.com/country/us').then(response=>{
+        axios.get('https://covid19.soficoop.com/country/us').then(response=>{
         this.results=response.data.snapshots
         
         for(let key in this.results){
